@@ -7,25 +7,25 @@
  * distribution, and is available at http://www.cecill.info
  */
 package org.xcsp.modeler.problems;
-
+import java.util.HashMap;
 import org.xcsp.common.IVar.Var;
 import org.xcsp.modeler.api.ProblemAPI;
 
 public class Frequences implements ProblemAPI {
 
-	Map<String, Object> stations [];
-	int [] regions;
-	Map<String, int>[] interferences;
-	Map<String, int>[] liaisons;
+	HashMap<String, Integer>[] stations ;
+	int [] regions;
+	HashMap<String, Integer>[] interferences;
+	HashMap<String, Integer>[] liaisons;
 
-	Var[] allocated_r = array("allocated_frequencies_r", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée au recepteur");
-	Var[] allocated_e = array("allocated_frequencies_e", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée à l'emetteur");
+	Var[] allocated_r;//= array("allocated_frequencies_r", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée au recepteur");
+	Var[] allocated_e; //= array("allocated_frequencies_e", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée à l'emetteur");
 
 	//=================================LIAISONS=============================================
 	
 	private boolean liaisonExists(int i, int j){
-		for (l : this.liaisons){
-			if( l ["x"] == i && l ["y"] == j)
+		for (HashMap<String, Integer> l : this.liaisons){
+			if( l.get("x") == i && l .get("y") == j)
 				return true;
 		}
 		return false;
@@ -35,7 +35,7 @@ public class Frequences implements ProblemAPI {
 	private void liasonsRules(int N){
 		for (int i = 0; i < N ; i ++){
 			for (int j = i; j < N ; j ++){
-				if(liasonExists(i,j){
+				if(liaisonExists(i,j)){
 					eq(this.allocated_e[i],this.allocated_r[j]);
 					eq(this.allocated_e[j],this.allocated_r[j]);
 				}
@@ -48,23 +48,24 @@ public class Frequences implements ProblemAPI {
 	//ensure that the emission frequency is different enough from the reception frequency
 	private void deltaI(int i){
 		// |allocated_r[i] - allocated_e[i]| <= delta
-		delta = this.stations[i]["delta"];
+		int delta = this.stations[i].get("delta");
 		eq(dist(this.allocated_r[i], this.allocated_e[i]), delta);
 	}
 
 	private void diRules(int N){
 		for (int i = 0 ; i < N ; i ++){
-			delta_i(i);
+			deltaI(i);
+		}
 	}
 
 
 	//=================================INTERFERENCES========================================
-	private boolean deltaIJ(int i, int j){
-		for (l : this.interferences){
-			if( l ["x"] == i && l ["y"] == j)
-				return l["Delta"];
+	private int deltaIJ(int i, int j){
+		for (HashMap<String, Integer>l : this.interferences){
+			if( l.get("x") == i && l .get("y") == j)
+				return l.get("Delta");
 		}
-		return null;
+		return 0;
 	}
 
 	private void deltaIJRules(int N){
@@ -72,7 +73,8 @@ public class Frequences implements ProblemAPI {
 		for (int i = 0 ; i < N ; i ++)
 			for (int j = 0 ; j < N ; j ++){
 				int delta = deltaIJ(i,j);	
-				if(delta != null){
+				System.out.println(delta);
+				if(delta != 0){
 					ge(dist(this.allocated_r[i], this.allocated_r[j]), delta);
 					ge(dist(this.allocated_r[i], this.allocated_e[j]), delta);
 					ge(dist(this.allocated_e[i], this.allocated_r[j]), delta);
@@ -81,13 +83,21 @@ public class Frequences implements ProblemAPI {
 			}
 	}
 
+	void init(int n){
+		Var[] allocated_r= array("allocated_frequencies_r", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée au recepteur");
+		Var[] allocated_e= array("allocated_frequencies_e", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée à l'emetteur");
+	}
+
 	@Override
 	public void model() {
-		int n = 1;
+		int n = 10;
 		
+		init(n);
+
 		deltaIJRules(n);
-		diRules(n)
-		liasonsRules(n)
+		diRules(n);
+		liasonsRules(n);
+
 		//???
 		//minimize({allocated_r,allocated_e})
 	}
