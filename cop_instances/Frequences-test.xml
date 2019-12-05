@@ -1,0 +1,21 @@
+<instance format="XCSP3" type="COP">
+<variables>
+<array id="allocated_frequencies_r" note="allocated_frequencies_r[i] : frequence allouée au recepteur" size="[3]"> 0..13 </array>
+<array id="allocated_frequencies_e" note="allocated_frequencies_e[i] : frequence allouée à l'emetteur" size="[3]"> 0..13 </array>
+</variables>
+<constraints>
+<intension> eq(allocated_frequencies_e[1],allocated_frequencies_r[2]) </intension>
+<intension> eq(allocated_frequencies_e[2],allocated_frequencies_r[1]) </intension>
+<intension> ge(dist(allocated_frequencies_r[0],allocated_frequencies_r[1]),2) </intension>
+<intension> ge(dist(allocated_frequencies_r[0],allocated_frequencies_e[1]),2) </intension>
+<intension> ge(dist(allocated_frequencies_e[0],allocated_frequencies_r[1]),2) </intension>
+<intension> ge(dist(allocated_frequencies_e[0],allocated_frequencies_e[1]),2) </intension>
+<intension> ge(dist(allocated_frequencies_r[0],allocated_frequencies_r[2]),3) </intension>
+<intension> ge(dist(allocated_frequencies_r[0],allocated_frequencies_e[2]),3) </intension>
+<intension> ge(dist(allocated_frequencies_e[0],allocated_frequencies_r[2]),3) </intension>
+<intension> ge(dist(allocated_frequencies_e[0],allocated_frequencies_e[2]),3) </intension>
+</constraints>
+<objectives>
+<minimize type="maximum"> allocated_frequencies_r[] allocated_frequencies_e[] </minimize>
+</objectives>
+</instance>

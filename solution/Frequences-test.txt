@@ -1,0 +1,11 @@
+c java -server -Xmx500m -cp .:.//choco-parsers.jar org.chocosolver.parser.xcsp.ChocoXCSP "../../../cop_instances/Frequences-test.xml"  -tl '60s' -p 1 -x 0
+c [../../../cop_instances/Frequences-test.xml, -tl, 60s, -p, 1, -x, 0]
+c simple solver
+c parse instance...
+c solve instance...
+o 3 
+s OPTIMUM FOUND
+v <instantiation>
+v 	<list>allocated_frequencies_r[0] allocated_frequencies_r[1] allocated_frequencies_r[2] allocated_frequencies_e[0] allocated_frequencies_e[1] allocated_frequencies_e[2] </list>
+v 	<values>0 3 3 0 3 3 </values>
+v </instantiation>

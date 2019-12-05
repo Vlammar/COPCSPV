@@ -7,22 +7,23 @@
  * distribution, and is available at http://www.cecill.info
  */
 package org.xcsp.modeler.problems;
+import java.util.Map;
 import java.util.HashMap;
 import org.xcsp.common.IVar.Var;
 import org.xcsp.modeler.api.ProblemAPI;
 
 public class Frequences implements ProblemAPI {
 
-	HashMap<String, Integer>[] stations ;
+	//Map<String,Object>[] datas;
+	HashMap<String, Object>[] stations ;
 	int [] regions;
 	HashMap<String, Integer>[] interferences;
 	HashMap<String, Integer>[] liaisons;
 
-	Var[] allocated_r;//= array("allocated_frequencies_r", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée au recepteur");
-	Var[] allocated_e; //= array("allocated_frequencies_e", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée à l'emetteur");
+	
 
 	//=================================LIAISONS=============================================
-	
+	/*
 	private boolean liaisonExists(int i, int j){
 		for (HashMap<String, Integer> l : this.liaisons){
 			if( l.get("x") == i && l .get("y") == j)
@@ -82,24 +83,20 @@ public class Frequences implements ProblemAPI {
 				}
 			}
 	}
-
-	void init(int n){
-		Var[] allocated_r= array("allocated_frequencies_r", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée au recepteur");
-		Var[] allocated_e= array("allocated_frequencies_e", size(n), dom(range(n)), "allocated_frequencies_r[i] : frequence allouée à l'emetteur");
-	}
-
+*/
 	@Override
 	public void model() {
-		int n = 10;
+		int n = this.stations.length;
 		
-		init(n);
-
-		deltaIJRules(n);
+		
+		//Var[] allocated_r= array("allocated_frequencies_r", size(10), dom(range(10)), "allocated_frequencies_r[i] : frequence allouée au recepteur");
+		//Var[] allocated_e= array("allocated_frequencies_e", size(10), dom(range(10)), "allocated_frequencies_r[i] : frequence allouée à l'emetteur");
+		/*deltaIJRules(n);
 		diRules(n);
 		liasonsRules(n);
 
 		//???
-		//minimize({allocated_r,allocated_e})
+		//minimize({allocated_r,allocated_e})*/
 	}
 
 }
