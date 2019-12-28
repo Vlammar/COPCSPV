@@ -1,6 +1,0 @@
-c java -server -Xmx500m -cp .:.//choco-parsers.jar org.chocosolver.parser.xcsp.ChocoXCSP "../../../cop_instances/Frequences-m1-celar_500_30_20_5_0.870000_29.xml"  -tl '6s' -p 1 -x 0
-c [../../../cop_instances/Frequences-m1-celar_500_30_20_5_0.870000_29.xml, -tl, 6s, -p, 1, -x, 0]
-c simple solver
-c parse instance...
-c solve instance...
-s UNKNOWN
