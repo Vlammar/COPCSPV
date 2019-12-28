@@ -1,13 +1,11 @@
 import math
 
 def printsol(f,n,mode,verbose,markdown):
-
     model=f.readline()
     if "cop" in model:
         printCop(f,n,mode,verbose,markdown)
     else:
         printWcsp(f,n)
-
 
 def printWcsp(f,n):
     print("Todo print Wcsp :)")
