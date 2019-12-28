@@ -1,20 +1,25 @@
 import math
-def printsol(f,k,n,mode,verbose,markdown):
-    #sol contient les numeros de boite des variables i
 
+def printsol(f,n,mode,verbose,markdown):
 
     model=f.readline()
     if "cop" in model:
-        printCop(f,k,n,mode,verbose,markdown)
+        printCop(f,n,mode,verbose,markdown)
     else:
-        printWcsp(f,k,n)
+        printWcsp(f,n)
 
 
-def printWcsp(f,k,n):
+def printWcsp(f,n):
     print("Todo print Wcsp :)")
     pass
 
-def printCop(f,k,n,mode,verbose,markdown):
+"""
+f=fichier a lire
+n=nombre antennes
+verbose=affiche toutes les infos pour chaque mode ainsi que tous les resultats(debug)
+markdown=produit une sortie sous la forme d un morceau de ligne de tableau markdown
+"""
+def printCop(f,n,mode,verbose,markdown):
     sol=[0]*n
     l=f.readline()
     nbfreqcalc=0
@@ -47,7 +52,6 @@ def printCop(f,k,n,mode,verbose,markdown):
     if(markdown):
         print("{}".format(nbfreqcalc),end=" | ")
         print("{}".format(maxfreq),end=" | ")
-        #print("{}".format(minfreq),end=" | ")
         print("{}".format(maxfreq-minfreq))
 
     elif(verbose):
@@ -74,15 +78,15 @@ def printCop(f,k,n,mode,verbose,markdown):
 
         else:
             print("Error")
-
-    #print("Frequences allouees")
-    #print("Emission")
-    #print("\n")
-    #for b in range(k):
-    #    print("Antenne E{} valeur{} frequence{}".format(b,sol[b],sol[b]))
-    #print("Reception")
-    #for b in range(k):
-    #    print("Antenne R{} valeur{} frequence{}".format(b,sol[k+b],sol[k+b]))
+    if(verbose):
+        print("Frequences allouees")
+        print("Emission")
+        print("\n")
+        for b in range(k):
+            print("Antenne E{} valeur{} frequence{}".format(b,sol[b],sol[b]))
+        print("Reception")
+        for b in range(k):
+            print("Antenne R{} valeur{} frequence{}".format(b,sol[k+b],sol[k+b]))
 
 import sys
 import os
@@ -97,8 +101,7 @@ elif(sys.argv[1]=="-m"):
 else:
     path=sys.argv[1]
 
-k=3
-n=2*k
+
 mode="default"
 if("m1" in path):
     mode="m1"
@@ -110,6 +113,10 @@ if "celar" in path :
     s=(path.split("/")[1]).split(".txt")[0].split("_")
     k=int(s[1])
     n=2*k
+elif "test" in path :
+    k=3
+    n=2*k
+
 f = open(path, "r")
 
 if(markdown):
@@ -124,5 +131,5 @@ if(markdown):
     #print("Mode|Nom|Temps|Opt|nbfreq|maxfreq|deltafreq")
     #print("--|----|----|---|-----|-----|-----")
     print("{}|{}|{}|{}|".format(mode,name.split(mode+"-")[1],time,opt),end="")
-printsol(f,k,n,mode,verbose,markdown)
+printsol(f,n,mode,verbose,markdown)
 
