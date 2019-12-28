@@ -1,4 +1,3 @@
-path=$1
-cd src
-python3 Sol.py ../solution/$path
-cd ../
+path=$@
+python3 src/Sol.py $path
+

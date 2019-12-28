@@ -7,6 +7,9 @@
 for data in $1/*
 do
 	echo $data
-	java -jar CSP/XCSP3-Java-Tools/target/xcsp3-compiler-1.1.1-SNAPSHOT.jar org.xcsp.modeler.problems.Frequences -data=$data
+	for m in m1 m2 m3
+	do
+		java -jar CSP/XCSP3-Java-Tools/target/xcsp3-compiler-1.1.1-SNAPSHOT.jar org.xcsp.modeler.problems.Frequences -data=$data -variant=$m
+	done
 	mv Frequences* cop_instances;
 done

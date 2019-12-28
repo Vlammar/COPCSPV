@@ -1,10 +1,11 @@
-def printsol(f,k,n):
+import math
+def printsol(f,k,n,mode,verbose,markdown):
     #sol contient les numeros de boite des variables i
 
 
     model=f.readline()
     if "cop" in model:
-        printCop(f,k,n)
+        printCop(f,k,n,mode,verbose,markdown)
     else:
         printWcsp(f,k,n)
 
@@ -13,9 +14,13 @@ def printWcsp(f,k,n):
     print("Todo print Wcsp :)")
     pass
 
-def printCop(f,k,n):
+def printCop(f,k,n,mode,verbose,markdown):
     sol=[0]*n
     l=f.readline()
+    nbfreqcalc=0
+    maxfreq=0
+    minfreq=math.inf
+    nbfreq=" Defined only for m1"
     while "<values>" not in l:
             l=f.readline()
             #on verifie si il y a une solution
@@ -26,35 +31,98 @@ def printCop(f,k,n):
     s=l.split("<values>")[1].split("</values>")[0]
     cpt=0
     for m in s.split():
-        sol[cpt]=int(m)
+
+        if(cpt>=n):
+            nbfreq=int(m)
+        else:
+            if(int(m)not in sol):
+                nbfreqcalc+=1
+                if(maxfreq<int(m)):
+                    maxfreq=int(m)
+                if(minfreq>int(m)):
+                    minfreq=int(m)
+            sol[cpt]=int(m)
         cpt+=1
-    """for boite in range(k):
-        #print("Boite "+str(boite)+" :")
-        for i in range(0,n):
-            if sol[i]==boite:
-                print(i+1,end=" ")
-        print()
-"""
-    print("Frequences allouees")
-    print("Emission")
-    print("TODO lecture de la frequence car 0 1 2ca va bien 30s")
-    for b in range(k):
-        print("Antenne E{} valeur{} frequence{}".format(b,sol[b],sol[b]))
-    print("Reception")
-    for b in range(k):
-        print("Antenne R{} valeur{} frequence{}".format(b,sol[k+b],sol[k+b]))
+
+    if(markdown):
+        print("{}".format(nbfreqcalc),end=" | ")
+        print("{}".format(maxfreq),end=" | ")
+        #print("{}".format(minfreq),end=" | ")
+        print("{}".format(maxfreq-minfreq))
+
+    elif(verbose):
+        print("nbfreq mesure = {}".format(nbfreqcalc))
+        print("maxfreq  = {}".format(maxfreq))
+        print("minfreq  = {}".format(minfreq))
+        print("deltafreq  = {}".format(maxfreq-minfreq))
+
+    else:
+        if(mode=="m1"):
+            print("m1:")
+            print("nbfreq differente = {}".format(nbfreq))
+            print("verification nbfreq mesure = {}".format(nbfreqcalc))
+        elif(mode=="m2"):
+            print("m2:")
+            print("maxfreq  = {}".format(maxfreq))
+            print("minfreq  = {}".format(minfreq))
+        elif(mode=="m3"):
+            print("m3:")
+            print("deltafreq  = {}".format(maxfreq-minfreq))
+        elif(mode=="default"):
+            print("An error happened, check if cop instance file name contains m1 or m2 or m3 in their names")
+
+
+        else:
+            print("Error")
+
+    #print("Frequences allouees")
+    #print("Emission")
+    #print("\n")
+    #for b in range(k):
+    #    print("Antenne E{} valeur{} frequence{}".format(b,sol[b],sol[b]))
+    #print("Reception")
+    #for b in range(k):
+    #    print("Antenne R{} valeur{} frequence{}".format(b,sol[k+b],sol[k+b]))
 
 import sys
 import os
-print(sys.argv)
-path=sys.argv[1]
-print(path)
+verbose=False
+markdown=False
+if(sys.argv[1]=="-v"):
+    verbose=True
+    path=sys.argv[2]
+elif(sys.argv[1]=="-m"):
+    markdown=True
+    path=sys.argv[2]
+else:
+    path=sys.argv[1]
+
 k=3
 n=2*k
+mode="default"
+if("m1" in path):
+    mode="m1"
+if("m2" in path):
+    mode="m2"
+if("m3" in path):
+    mode="m3"
 if "celar" in path :
-    s=path.split("Frequences-celar")[1].split(".txt")[0].split("_")
-    k=int(s[0])
+    s=(path.split("/")[1]).split(".txt")[0].split("_")
+    k=int(s[1])
     n=2*k
 f = open(path, "r")
-printsol(f,k,n)
+
+if(markdown):
+    name=path.split("/")[1].split(".txt")[0]
+    out=open("out/out_cop_"+name,"r")
+    l=out.readline()
+    while "real" not in l:
+            l=out.readline()
+            time=l.split("\t")[1].split("\n")[0]
+
+    opt="OPT"
+    #print("Mode|Nom|Temps|Opt|nbfreq|maxfreq|deltafreq")
+    #print("--|----|----|---|-----|-----|-----")
+    print("{}|{}|{}|{}|".format(mode,name.split(mode+"-")[1],time,opt),end="")
+printsol(f,k,n,mode,verbose,markdown)
 
