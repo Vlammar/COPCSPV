@@ -1,6 +1,6 @@
 #Made by Valentin Jabre
 #execute on all .xml files the csp solver
-temp=6
+temp=$1
 cd CSP/runner-dft/runner
 for file in ../../../cop_instances/*.xml;
 do
