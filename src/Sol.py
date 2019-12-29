@@ -28,7 +28,8 @@ def printCop(f,n,mode,verbose,markdown):
             l=f.readline()
             #on verifie si il y a une solution
             if l=="\n" or l=="":
-                print("Pas de solution")
+                #print("Pas de solution")
+                print("N/A|N/A|N/A")
                 exit(0)
 
     s=l.split("<values>")[1].split("</values>")[0]
@@ -124,10 +125,15 @@ if(markdown):
     while "real" not in l:
             l=out.readline()
             time=l.split("\t")[1].split("\n")[0]
-
-    opt="OPT"
+    out.close()
+    f2=open("solution/"+name+".txt","r")
+    l=f2.readline()
+    while ("OPTIMUM FOUND" not in l) and("SATISFIABLE" not in l) and("UNKNOWN" not in l) :
+        l=f2.readline()
+    opt=l.split(" ")[1].split("\n")[0]
+    f2.close()
     #print("Mode|Nom|Temps|Opt|nbfreq|maxfreq|deltafreq")
     #print("--|----|----|---|-----|-----|-----")
     print("{}|{}|{}|{}|".format(mode,name.split(mode+"-")[1],time,opt),end="")
 printsol(f,n,mode,verbose,markdown)
-
+f.close()
