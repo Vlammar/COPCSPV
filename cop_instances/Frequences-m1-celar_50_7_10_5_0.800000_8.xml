@@ -1,0 +1,392 @@
+<instance format="XCSP3" type="COP">
+<variables>
+<array id="allocated_frequencies_r" note="allocated_frequencies_r[i] : frequence allouée au recepteur" size="[50]">
+<domain for="allocated_frequencies_r[0]"> 14 28 42 56 70 84 98 126 140 154 182 196 210 224 238 252 266 280 294 308 322 336 364 378 392 406 448 462 476 490 504 518 546 560 574 588 602 630 644 658 672 686 700 714 </domain>
+<domain for="allocated_frequencies_r[1]"> 14 28 42 56 70 98 112 126 140 154 168 182 196 238 252 266 280 294 308 322 350 364 406 420 434 462 490 504 518 532 560 574 602 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[2] allocated_frequencies_r[6] allocated_frequencies_r[9] allocated_frequencies_r[37] allocated_frequencies_r[46..47]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[3]"> 14 42 56 84 98 112 154 168 182 196 210 224 238 252 266 280 294 308 322 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 616 630 644 658 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[4]"> 14 28 42 56 70 112 126 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 392 406 420 434 448 462 490 504 532 546 560 574 588 602 616 630 644 658 686 700 728 </domain>
+<domain for="allocated_frequencies_r[5]"> 14 28 42 56 70 84 98 112 126 140 154 168 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 434 448 462 476 504 518 546 560 574 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[7]"> 14 28 42 56 70 84 98 112 126 140 168 196 210 224 238 252 266 280 294 308 336 350 364 378 392 406 420 434 448 490 504 518 532 546 560 588 602 616 630 644 658 672 686 714 728 </domain>
+<domain for="allocated_frequencies_r[8]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 364 378 392 406 420 434 448 462 476 490 504 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[10]"> 14 42 56 70 84 112 126 140 154 168 196 210 224 238 252 308 322 336 350 364 378 392 406 420 434 448 490 504 518 532 560 574 588 602 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[11]"> 14 28 42 56 84 98 126 140 154 168 182 196 224 238 252 266 280 294 308 322 350 364 378 392 434 448 462 504 518 532 560 588 602 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[12]"> 14 28 42 56 70 84 98 112 126 154 168 182 196 210 224 238 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 686 700 714 </domain>
+<domain for="allocated_frequencies_r[13]"> 14 28 42 56 70 84 126 140 154 168 182 196 210 224 238 252 266 280 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 </domain>
+<domain for="allocated_frequencies_r[14]"> 14 28 42 70 84 98 112 126 140 154 182 196 210 252 266 280 294 308 336 350 364 378 392 406 420 434 448 476 490 504 532 546 560 574 588 602 616 630 672 686 714 </domain>
+<domain for="allocated_frequencies_r[15]"> 14 28 42 56 70 84 98 112 126 140 168 182 196 210 224 238 252 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[16]"> 14 28 42 56 84 98 126 140 154 168 182 210 224 238 252 266 280 294 308 322 336 364 378 392 406 448 462 476 490 518 532 546 560 574 602 616 630 644 658 672 700 714 728 </domain>
+<domain for="allocated_frequencies_r[17]"> 14 28 42 56 70 84 98 112 126 154 168 196 210 224 238 252 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 518 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[18]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 658 672 686 700 728 </domain>
+<domain for="allocated_frequencies_r[19]"> 14 28 42 70 84 98 126 140 154 168 182 210 238 252 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 532 546 560 574 588 616 630 644 658 672 686 700 714 </domain>
+<domain for="allocated_frequencies_r[20]"> 28 42 56 70 98 112 126 140 154 168 182 196 224 238 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 504 518 532 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[21]"> 14 28 42 56 84 98 112 126 168 182 196 210 224 238 252 280 308 322 336 350 364 378 392 406 420 434 448 462 476 504 518 532 546 574 588 602 616 630 644 658 672 686 700 </domain>
+<domain for="allocated_frequencies_r[22]"> 14 28 42 56 84 98 112 126 140 168 182 196 210 238 252 266 294 308 322 336 350 364 392 420 434 462 476 490 504 532 546 560 574 602 616 630 658 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[23]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 518 532 546 560 574 588 602 616 630 644 658 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[24]"> 42 56 84 98 112 126 140 154 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 616 630 672 700 714 728 </domain>
+<domain for="allocated_frequencies_r[25]"> 14 42 56 70 84 98 112 126 140 168 182 196 210 224 238 252 266 280 294 322 336 364 406 420 434 448 462 490 504 518 532 546 560 574 602 616 630 644 658 672 686 714 </domain>
+<domain for="allocated_frequencies_r[26]"> 14 28 42 56 84 98 140 154 168 196 210 224 238 252 308 322 336 350 364 378 406 420 434 462 476 490 504 518 532 546 560 574 588 616 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[27]"> 14 28 42 56 70 98 112 140 168 182 196 224 238 266 280 294 322 336 350 364 378 392 406 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[28]"> 28 42 56 70 84 98 112 126 154 168 196 210 224 252 280 294 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[29]"> 14 28 42 56 70 84 98 126 140 154 182 196 224 238 252 280 294 308 322 336 350 364 378 392 406 448 462 476 490 518 532 546 560 574 602 616 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[30]"> 14 28 42 56 70 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[31]"> 14 28 42 56 70 84 98 112 126 140 168 182 196 210 224 238 280 294 308 322 336 350 378 392 406 434 448 462 476 490 504 532 546 574 588 616 630 644 658 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[32]"> 14 28 42 56 84 112 126 140 154 168 182 196 210 224 238 252 280 294 308 322 336 350 364 378 392 420 434 448 462 476 490 504 518 532 546 560 574 588 616 630 644 672 700 714 728 </domain>
+<domain for="allocated_frequencies_r[33]"> 14 28 42 70 84 98 112 126 140 154 168 182 196 210 224 238 252 336 350 378 392 420 434 448 476 490 504 518 532 560 574 588 602 616 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[34]"> 14 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 476 490 504 518 532 546 560 574 588 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[35]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 728 </domain>
+<domain for="allocated_frequencies_r[36]"> 14 42 56 70 84 98 112 126 140 154 168 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 714 728 </domain>
+<domain for="allocated_frequencies_r[38]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 490 504 518 532 546 560 574 588 602 616 630 644 658 672 700 714 728 </domain>
+<domain for="allocated_frequencies_r[39]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 560 574 588 616 630 644 658 672 714 </domain>
+<domain for="allocated_frequencies_r[40]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[41]"> 14 28 42 56 70 84 98 126 154 168 182 210 224 238 252 266 280 294 308 322 350 364 392 406 420 434 448 462 476 490 504 532 546 574 588 616 630 644 686 728 </domain>
+<domain for="allocated_frequencies_r[42]"> 14 28 42 56 70 84 98 112 126 140 168 182 196 210 224 238 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[43]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[44]"> 14 28 42 70 84 98 126 154 168 182 196 224 238 252 266 294 308 336 350 378 392 406 420 448 462 476 490 504 518 532 546 560 574 602 616 630 658 672 686 714 728 </domain>
+<domain for="allocated_frequencies_r[45]"> 14 28 42 56 70 98 112 126 140 154 168 224 252 266 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 616 630 644 658 672 700 714 </domain>
+<domain for="allocated_frequencies_r[48]"> 28 42 56 70 84 98 112 126 154 168 182 196 210 224 252 266 280 294 308 322 336 350 364 378 392 406 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_r[49]"> 14 28 42 56 70 84 98 112 126 140 168 182 196 224 238 252 266 280 294 308 322 336 350 364 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+</array>
+<array id="allocated_frequencies_e" note="allocated_frequencies_e[i] : frequence allouée à l'emetteur" size="[50]">
+<domain for="allocated_frequencies_e[0]"> 14 28 42 56 70 84 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[1]"> 14 28 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 280 294 308 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[2] allocated_frequencies_e[42..43] allocated_frequencies_e[47]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[3]"> 14 28 42 56 70 84 112 140 154 168 196 210 224 238 252 266 280 322 336 350 364 378 392 406 434 448 462 476 490 504 518 532 546 588 602 616 630 644 658 686 700 728 </domain>
+<domain for="allocated_frequencies_e[4]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 322 336 364 378 406 420 434 448 476 490 504 518 546 560 574 588 602 616 644 658 672 686 700 728 </domain>
+<domain for="allocated_frequencies_e[5]"> 28 56 84 98 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 588 602 630 644 658 672 686 700 728 </domain>
+<domain for="allocated_frequencies_e[6]"> 14 28 56 70 84 98 112 126 140 168 182 196 210 224 238 252 266 308 322 336 350 364 378 392 406 434 448 462 476 490 504 518 532 546 574 588 602 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[7]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[8]"> 14 28 42 56 70 84 98 112 126 140 154 168 196 210 224 238 266 280 294 308 322 336 350 364 378 392 406 448 490 504 518 532 574 602 616 630 644 658 700 714 728 </domain>
+<domain for="allocated_frequencies_e[9]"> 14 28 56 70 84 98 126 140 154 168 182 196 210 238 252 280 294 308 322 350 364 392 406 420 434 462 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[10]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[11]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 560 574 588 602 616 630 644 658 672 686 700 728 </domain>
+<domain for="allocated_frequencies_e[12]"> 14 28 42 56 70 84 98 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[13]"> 14 28 42 56 70 84 98 112 126 154 168 182 196 210 224 238 252 266 280 294 308 322 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 728 </domain>
+<domain for="allocated_frequencies_e[14]"> 14 28 56 70 98 112 140 154 168 182 224 238 252 266 280 294 308 322 336 350 378 392 420 434 448 462 476 490 504 546 560 574 588 602 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[15]"> 28 42 56 84 98 112 126 140 168 182 196 210 224 238 266 294 308 322 350 364 378 392 406 434 462 504 518 532 546 560 574 588 602 630 644 658 672 686 700 714 </domain>
+<domain for="allocated_frequencies_e[16]"> 14 28 42 56 70 84 98 112 126 154 168 182 196 210 224 238 252 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[17]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 420 434 448 462 476 490 504 518 532 546 560 574 588 616 630 644 658 672 686 714 728 </domain>
+<domain for="allocated_frequencies_e[18]"> 28 42 56 70 98 112 126 140 154 168 182 196 210 238 266 280 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 588 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[19]"> 14 28 42 56 70 84 112 126 140 154 168 182 196 210 238 266 280 294 308 350 364 378 392 406 420 434 448 462 476 490 518 532 546 560 574 588 602 616 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[20]"> 14 28 42 56 70 84 98 112 126 154 168 182 210 224 238 252 266 280 294 308 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[21]"> 14 28 56 70 84 98 112 126 154 168 182 196 210 252 266 280 294 308 322 336 364 378 392 406 420 434 448 462 476 490 504 518 532 546 588 602 616 630 644 658 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[22]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 280 294 308 322 336 350 364 392 406 420 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[23]"> 14 28 42 56 70 84 112 126 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 378 392 406 420 448 476 490 504 518 532 546 574 588 616 630 658 672 714 728 </domain>
+<domain for="allocated_frequencies_e[24]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 294 308 322 336 364 378 392 406 420 448 462 490 504 518 532 546 560 574 588 602 616 630 644 658 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[25]"> 14 28 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 560 574 588 602 616 630 644 658 672 700 714 728 </domain>
+<domain for="allocated_frequencies_e[26]"> 14 28 42 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[27]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 210 224 238 252 266 280 294 308 322 350 364 378 392 406 420 434 448 462 476 490 504 518 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[28]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[29]"> 14 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[30]"> 14 28 70 84 98 126 140 182 196 210 238 252 266 280 294 308 322 336 350 378 392 406 434 448 462 504 518 532 546 560 588 602 616 630 644 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[31]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 294 322 350 364 378 392 406 420 434 448 462 476 504 518 532 546 560 602 616 630 644 658 700 714 728 </domain>
+<domain for="allocated_frequencies_e[32]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 420 434 448 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[33]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[34]"> 28 42 56 84 98 126 140 168 182 196 210 224 238 252 266 280 294 336 350 364 378 392 406 420 434 448 476 490 504 518 532 546 560 588 602 616 630 644 658 700 714 728 </domain>
+<domain for="allocated_frequencies_e[35]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 462 476 504 518 532 546 560 574 588 630 644 658 672 686 700 714 </domain>
+<domain for="allocated_frequencies_e[36]"> 14 42 56 70 84 98 126 140 154 168 182 196 210 224 238 252 266 280 336 350 364 378 392 406 434 448 462 476 490 504 518 532 546 574 588 616 644 658 686 700 714 </domain>
+<domain for="allocated_frequencies_e[37]"> 14 28 42 56 84 98 112 126 140 154 168 182 196 210 224 238 280 294 322 336 364 378 406 420 448 462 504 518 532 560 574 588 602 616 630 644 658 672 686 700 728 </domain>
+<domain for="allocated_frequencies_e[38]"> 14 28 42 70 84 98 112 126 140 154 168 182 196 210 224 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 574 644 658 672 686 714 </domain>
+<domain for="allocated_frequencies_e[39]"> 28 42 56 84 98 112 126 140 154 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 448 462 504 518 532 546 560 574 588 602 630 658 672 686 700 714 </domain>
+<domain for="allocated_frequencies_e[40]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[41]"> 14 28 42 56 70 98 112 126 140 154 168 182 196 224 238 252 266 280 308 336 350 364 420 434 448 462 476 490 504 518 532 574 588 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[44]"> 70 84 140 154 168 182 196 210 224 238 252 266 294 308 322 336 350 364 378 392 406 434 448 462 476 490 504 532 546 560 574 588 602 616 630 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[45]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 448 462 476 490 504 518 532 546 560 574 588 602 616 630 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[46]"> 14 28 42 56 70 84 98 112 126 140 154 168 182 196 210 224 238 252 266 280 308 322 350 364 378 392 406 420 434 448 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[48]"> 14 28 56 70 98 112 126 140 154 168 182 196 210 224 238 252 266 280 294 308 322 336 350 364 378 392 406 420 434 448 462 476 490 518 532 546 574 588 630 658 672 686 700 714 728 </domain>
+<domain for="allocated_frequencies_e[49]"> 28 42 70 98 112 126 140 154 182 196 210 224 238 252 280 308 322 336 350 364 378 392 406 434 462 476 490 504 518 532 546 560 574 588 602 616 630 644 658 672 686 700 714 728 </domain>
+</array>
+<var id="nbfreq"> 0..99 </var>
+</variables>
+<constraints>
+<intension> eq(allocated_frequencies_e[0],allocated_frequencies_r[20]) </intension>
+<intension> eq(allocated_frequencies_e[20],allocated_frequencies_r[0]) </intension>
+<intension> eq(allocated_frequencies_e[0],allocated_frequencies_r[22]) </intension>
+<intension> eq(allocated_frequencies_e[22],allocated_frequencies_r[0]) </intension>
+<intension> eq(allocated_frequencies_e[3],allocated_frequencies_r[28]) </intension>
+<intension> eq(allocated_frequencies_e[28],allocated_frequencies_r[3]) </intension>
+<intension> eq(allocated_frequencies_e[6],allocated_frequencies_r[47]) </intension>
+<intension> eq(allocated_frequencies_e[47],allocated_frequencies_r[6]) </intension>
+<intension> eq(allocated_frequencies_e[7],allocated_frequencies_r[12]) </intension>
+<intension> eq(allocated_frequencies_e[12],allocated_frequencies_r[7]) </intension>
+<intension> eq(allocated_frequencies_e[7],allocated_frequencies_r[48]) </intension>
+<intension> eq(allocated_frequencies_e[48],allocated_frequencies_r[7]) </intension>
+<intension> eq(allocated_frequencies_e[9],allocated_frequencies_r[13]) </intension>
+<intension> eq(allocated_frequencies_e[13],allocated_frequencies_r[9]) </intension>
+<intension> eq(allocated_frequencies_e[10],allocated_frequencies_r[18]) </intension>
+<intension> eq(allocated_frequencies_e[18],allocated_frequencies_r[10]) </intension>
+<intension> eq(allocated_frequencies_e[14],allocated_frequencies_r[47]) </intension>
+<intension> eq(allocated_frequencies_e[47],allocated_frequencies_r[14]) </intension>
+<intension> eq(allocated_frequencies_e[29],allocated_frequencies_r[47]) </intension>
+<intension> eq(allocated_frequencies_e[47],allocated_frequencies_r[29]) </intension>
+<intension> eq(allocated_frequencies_e[33],allocated_frequencies_r[47]) </intension>
+<intension> eq(allocated_frequencies_e[47],allocated_frequencies_r[33]) </intension>
+<intension> eq(allocated_frequencies_e[37],allocated_frequencies_r[47]) </intension>
+<intension> eq(allocated_frequencies_e[47],allocated_frequencies_r[37]) </intension>
+<intension> eq(dist(allocated_frequencies_r[0],allocated_frequencies_e[0]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[1],allocated_frequencies_e[1]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[2],allocated_frequencies_e[2]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[3],allocated_frequencies_e[3]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[4],allocated_frequencies_e[4]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[5],allocated_frequencies_e[5]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[6],allocated_frequencies_e[6]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[7],allocated_frequencies_e[7]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[8],allocated_frequencies_e[8]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[9],allocated_frequencies_e[9]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[10],allocated_frequencies_e[10]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[11],allocated_frequencies_e[11]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[12],allocated_frequencies_e[12]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[13],allocated_frequencies_e[13]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[14],allocated_frequencies_e[14]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[15],allocated_frequencies_e[15]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[16],allocated_frequencies_e[16]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[17],allocated_frequencies_e[17]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[18],allocated_frequencies_e[18]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[19],allocated_frequencies_e[19]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[20],allocated_frequencies_e[20]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[21],allocated_frequencies_e[21]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[22],allocated_frequencies_e[22]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[23],allocated_frequencies_e[23]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[24],allocated_frequencies_e[24]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[25],allocated_frequencies_e[25]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[26],allocated_frequencies_e[26]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[27],allocated_frequencies_e[27]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[28],allocated_frequencies_e[28]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[29],allocated_frequencies_e[29]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[30],allocated_frequencies_e[30]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[31],allocated_frequencies_e[31]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[32],allocated_frequencies_e[32]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[33],allocated_frequencies_e[33]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[34],allocated_frequencies_e[34]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[35],allocated_frequencies_e[35]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[36],allocated_frequencies_e[36]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[37],allocated_frequencies_e[37]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[38],allocated_frequencies_e[38]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[39],allocated_frequencies_e[39]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[40],allocated_frequencies_e[40]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[41],allocated_frequencies_e[41]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[42],allocated_frequencies_e[42]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[43],allocated_frequencies_e[43]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[44],allocated_frequencies_e[44]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[45],allocated_frequencies_e[45]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[46],allocated_frequencies_e[46]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[47],allocated_frequencies_e[47]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[48],allocated_frequencies_e[48]),154) </intension>
+<intension> eq(dist(allocated_frequencies_r[49],allocated_frequencies_e[49]),154) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_r[19]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_e[19]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_r[19]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_e[19]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_r[22]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_e[22]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_r[22]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_e[22]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_r[26]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_e[26]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_r[26]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_e[26]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_r[30]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[1],allocated_frequencies_e[30]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_r[30]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[1],allocated_frequencies_e[30]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[2],allocated_frequencies_r[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[2],allocated_frequencies_e[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[2],allocated_frequencies_r[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[2],allocated_frequencies_e[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[3],allocated_frequencies_r[15]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[3],allocated_frequencies_e[15]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[3],allocated_frequencies_r[15]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[3],allocated_frequencies_e[15]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[3],allocated_frequencies_r[41]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[3],allocated_frequencies_e[41]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[3],allocated_frequencies_r[41]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[3],allocated_frequencies_e[41]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[4],allocated_frequencies_r[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[4],allocated_frequencies_e[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[4],allocated_frequencies_r[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[4],allocated_frequencies_e[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[5],allocated_frequencies_r[24]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[5],allocated_frequencies_e[24]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[5],allocated_frequencies_r[24]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[5],allocated_frequencies_e[24]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[6],allocated_frequencies_r[28]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[6],allocated_frequencies_e[28]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[6],allocated_frequencies_r[28]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[6],allocated_frequencies_e[28]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[6],allocated_frequencies_r[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[6],allocated_frequencies_e[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[6],allocated_frequencies_r[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[6],allocated_frequencies_e[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[6],allocated_frequencies_r[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[6],allocated_frequencies_e[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[6],allocated_frequencies_r[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[6],allocated_frequencies_e[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[8],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[8],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[8],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[8],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[9],allocated_frequencies_r[23]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[9],allocated_frequencies_e[23]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[9],allocated_frequencies_r[23]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[9],allocated_frequencies_e[23]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[10],allocated_frequencies_r[20]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[10],allocated_frequencies_e[20]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[10],allocated_frequencies_r[20]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[10],allocated_frequencies_e[20]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[10],allocated_frequencies_r[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[10],allocated_frequencies_e[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[10],allocated_frequencies_r[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[10],allocated_frequencies_e[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[11],allocated_frequencies_r[17]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[11],allocated_frequencies_e[17]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[11],allocated_frequencies_r[17]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[11],allocated_frequencies_e[17]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[12],allocated_frequencies_r[37]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[12],allocated_frequencies_e[37]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[12],allocated_frequencies_r[37]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[12],allocated_frequencies_e[37]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[12],allocated_frequencies_r[47]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[12],allocated_frequencies_e[47]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[12],allocated_frequencies_r[47]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[12],allocated_frequencies_e[47]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[13],allocated_frequencies_r[18]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[13],allocated_frequencies_e[18]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[13],allocated_frequencies_r[18]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[13],allocated_frequencies_e[18]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[14],allocated_frequencies_r[39]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[14],allocated_frequencies_e[39]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[14],allocated_frequencies_r[39]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[14],allocated_frequencies_e[39]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[15],allocated_frequencies_r[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[15],allocated_frequencies_e[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[15],allocated_frequencies_r[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[15],allocated_frequencies_e[44]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[16],allocated_frequencies_r[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[16],allocated_frequencies_e[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[16],allocated_frequencies_r[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[16],allocated_frequencies_e[28]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[17],allocated_frequencies_r[45]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[17],allocated_frequencies_e[45]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[17],allocated_frequencies_r[45]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[17],allocated_frequencies_e[45]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_r[22]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_e[22]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_r[22]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_e[22]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_r[23]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_e[23]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_r[23]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_e[23]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_r[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_e[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_r[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_e[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[18],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[18],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[19],allocated_frequencies_r[24]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[19],allocated_frequencies_e[24]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[19],allocated_frequencies_r[24]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[19],allocated_frequencies_e[24]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[19],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[19],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[19],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[19],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[20],allocated_frequencies_r[30]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[20],allocated_frequencies_e[30]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[20],allocated_frequencies_r[30]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[20],allocated_frequencies_e[30]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[21],allocated_frequencies_r[32]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[21],allocated_frequencies_e[32]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[21],allocated_frequencies_r[32]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[21],allocated_frequencies_e[32]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[21],allocated_frequencies_r[43]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[21],allocated_frequencies_e[43]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[21],allocated_frequencies_r[43]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[21],allocated_frequencies_e[43]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[21],allocated_frequencies_r[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[21],allocated_frequencies_e[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[21],allocated_frequencies_r[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[21],allocated_frequencies_e[44]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[22],allocated_frequencies_r[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[22],allocated_frequencies_e[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[22],allocated_frequencies_r[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[22],allocated_frequencies_e[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[23],allocated_frequencies_r[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[23],allocated_frequencies_e[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[23],allocated_frequencies_r[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[23],allocated_frequencies_e[24]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[23],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[23],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[23],allocated_frequencies_r[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[23],allocated_frequencies_e[44]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[24],allocated_frequencies_r[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[24],allocated_frequencies_e[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[24],allocated_frequencies_r[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[24],allocated_frequencies_e[49]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[25],allocated_frequencies_r[28]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[25],allocated_frequencies_e[28]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[25],allocated_frequencies_r[28]),20) </intension>
+<intension> ge(dist(allocated_frequencies_e[25],allocated_frequencies_e[28]),20) </intension>
+<intension> ge(dist(allocated_frequencies_r[25],allocated_frequencies_r[42]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[25],allocated_frequencies_e[42]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[25],allocated_frequencies_r[42]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[25],allocated_frequencies_e[42]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[27],allocated_frequencies_r[29]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[27],allocated_frequencies_e[29]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[27],allocated_frequencies_r[29]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[27],allocated_frequencies_e[29]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[27],allocated_frequencies_r[40]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[27],allocated_frequencies_e[40]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[27],allocated_frequencies_r[40]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[27],allocated_frequencies_e[40]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[27],allocated_frequencies_r[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[27],allocated_frequencies_e[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[27],allocated_frequencies_r[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[27],allocated_frequencies_e[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[28],allocated_frequencies_r[38]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[28],allocated_frequencies_e[38]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[28],allocated_frequencies_r[38]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[28],allocated_frequencies_e[38]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[28],allocated_frequencies_r[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[28],allocated_frequencies_e[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[28],allocated_frequencies_r[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[28],allocated_frequencies_e[48]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[31],allocated_frequencies_r[36]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[31],allocated_frequencies_e[36]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[31],allocated_frequencies_r[36]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[31],allocated_frequencies_e[36]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[34],allocated_frequencies_r[36]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[34],allocated_frequencies_e[36]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[34],allocated_frequencies_r[36]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[34],allocated_frequencies_e[36]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[34],allocated_frequencies_r[43]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[34],allocated_frequencies_e[43]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[34],allocated_frequencies_r[43]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[34],allocated_frequencies_e[43]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[34],allocated_frequencies_r[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[34],allocated_frequencies_e[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[34],allocated_frequencies_r[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[34],allocated_frequencies_e[47]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[35],allocated_frequencies_r[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[35],allocated_frequencies_e[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[35],allocated_frequencies_r[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_e[35],allocated_frequencies_e[49]),50) </intension>
+<intension> ge(dist(allocated_frequencies_r[42],allocated_frequencies_r[45]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[42],allocated_frequencies_e[45]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[42],allocated_frequencies_r[45]),40) </intension>
+<intension> ge(dist(allocated_frequencies_e[42],allocated_frequencies_e[45]),40) </intension>
+<intension> ge(dist(allocated_frequencies_r[45],allocated_frequencies_r[46]),30) </intension>
+<intension> ge(dist(allocated_frequencies_r[45],allocated_frequencies_e[46]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[45],allocated_frequencies_r[46]),30) </intension>
+<intension> ge(dist(allocated_frequencies_e[45],allocated_frequencies_e[46]),30) </intension>
+<nValues>
+<list> allocated_frequencies_r[] allocated_frequencies_e[] </list>
+<condition> (eq,nbfreq) </condition>
+</nValues>
+</constraints>
+<objectives>
+<minimize> nbfreq </minimize>
+</objectives>
+</instance>
