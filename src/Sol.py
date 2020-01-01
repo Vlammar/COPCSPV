@@ -117,7 +117,6 @@ elif "test" in path :
     n=2*k
 
 f = open(path, "r")
-
 if(markdown):
     name=path.split("/")[1].split(".txt")[0]
     out=open("out/out_cop_"+name,"r")

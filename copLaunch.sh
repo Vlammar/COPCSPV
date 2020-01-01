@@ -7,7 +7,7 @@ do
 	echo Running:	
         name=$(basename "$file" ".xml")
         echo $name
-        time (./xcsp3-* -tl $temp $file>../../../solution/$name.txt) &>../../../out/out_cop_$name
+        time (./xcsp3-* -tl $temp -ml 2048 $file>../../../solution/$name.txt) &>../../../out/out_cop_$name
 
 done
 
