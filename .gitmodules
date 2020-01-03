@@ -1,0 +1,3 @@
+[submodule "XCSP3"]
+	path = CSP/XCSP3-Java-Tools
+	url = https://github.com/xcsp3team/XCSP3-Java-Tools
