@@ -16,6 +16,7 @@ public class Frequences implements ProblemAPI {
 
 	Liaison[] liaisons;
 
+
 	class Station {
 		int num, region, delta;
 		int[] emetteur, recepteur;
@@ -100,9 +101,10 @@ public class Frequences implements ProblemAPI {
 					station_in_region_list.add(allocated_e[s.num]);
 				}
 			}
-			System.out.println(station_in_region_list);
-			Var[] station_in_region = (Var[])station_in_region_list.toArray();
-			System.out.println(region+" "+station_in_region);
+			Var[] station_in_region = new Var[station_in_region_list.size()] ;
+			for (int i = 0; i < station_in_region_list.size(); i ++){
+				station_in_region[i] = station_in_region_list.get(i);
+			}
 			nValues(station_in_region,LE,regions[region]);
 		}
 	}
