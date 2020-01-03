@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import org.xcsp.common.IVar.Var;
 import org.xcsp.modeler.api.ProblemAPI;
 
-public class Frequences implements ProblemAPI {
+public class Frequences_CSPV implements ProblemAPI {
 
 	int[] regions;
 
@@ -92,15 +92,16 @@ public class Frequences implements ProblemAPI {
 	}
 
 	private void minFrequencesRegions(int N, Var[] allocated_r, Var[] allocated_e){
-		for (int region = 0; region < this.regions.length; region ++){
-			ArrayList<Var> station_in_region_list = new ArrayList<Var>();
+		
+		for (int region = 0; region <this.regions.length; region ++){
+			ArrayList<Var> station_in_region_list = new ArrayList<>();
 			for (Station s : this.stations){
 				if (s.region ==region){
 					station_in_region_list.add(allocated_r[s.num]);
 					station_in_region_list.add(allocated_e[s.num]);
+
 				}
 			}
-			System.out.println(station_in_region_list);
 			Var[] station_in_region = (Var[])station_in_region_list.toArray();
 			System.out.println(region+" "+station_in_region);
 			nValues(station_in_region,LE,regions[region]);
