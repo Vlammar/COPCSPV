@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import org.xcsp.common.IVar.Var;
 import org.xcsp.modeler.api.ProblemAPI;
 
-public class Frequences_CSPV implements ProblemAPI {
+public class Frequences implements ProblemAPI {
 
 	int[] regions;
 
@@ -15,6 +15,7 @@ public class Frequences_CSPV implements ProblemAPI {
 	Interference[] interferences;
 
 	Liaison[] liaisons;
+
 
 	class Station {
 		int num, region, delta;
@@ -92,18 +93,18 @@ public class Frequences_CSPV implements ProblemAPI {
 	}
 
 	private void minFrequencesRegions(int N, Var[] allocated_r, Var[] allocated_e){
-		
-		for (int region = 0; region <this.regions.length; region ++){
-			ArrayList<Var> station_in_region_list = new ArrayList<>();
+		for (int region = 0; region < this.regions.length; region ++){
+			ArrayList<Var> station_in_region_list = new ArrayList<Var>();
 			for (Station s : this.stations){
 				if (s.region ==region){
 					station_in_region_list.add(allocated_r[s.num]);
 					station_in_region_list.add(allocated_e[s.num]);
-
 				}
 			}
-			Var[] station_in_region = (Var[])station_in_region_list.toArray();
-			System.out.println(region+" "+station_in_region);
+			Var[] station_in_region = new Var[station_in_region_list.size()] ;
+			for (int i = 0; i < station_in_region_list.size(); i ++){
+				station_in_region[i] = station_in_region_list.get(i);
+			}
 			nValues(station_in_region,LE,regions[region]);
 		}
 	}
@@ -122,51 +123,6 @@ public class Frequences_CSPV implements ProblemAPI {
 		diRules(n, allocated_r, allocated_e);// distance entre E et R = delta
 		deltaIJRules(n, allocated_r, allocated_e);
 		minFrequencesRegions(n, allocated_r, allocated_e);
-
-		if (modelVariant("m1")) {
-			Var nbfreq = var("nbfreq", dom(range(2 * n)));
-
-			nValues(vars(allocated_r, allocated_e), EQ, nbfreq);
-			minimize(nbfreq);
-			// minimize(NVALUES,vars(allocated_r, allocated_e));//le solveur n integre pas
-			// nvalues
-		}
-		if (modelVariant("m2")) {
-
-			minimize(MAXIMUM, vars(allocated_r, allocated_e));// on veut minimiser la valeur maximale des frequences
-																// utilisees == utiliser les fréquences les plus basses
-																// possible
-		}
-		if (modelVariant("m3")) {
-			List<Integer> freqs = new ArrayList<>();
-			int m = 0;
-
-			for (int i = 0; i < n; i++) {
-
-				for (int r : stations[i].recepteur) {
-					if (m < r)
-						m = r;
-					if (!freqs.contains(r))
-						freqs.add(r);
-				}
-				for (int e : stations[i].emetteur) {
-					if (m < e)
-						m = e;
-					if (!freqs.contains(e))
-						freqs.add(e);
-				}
-
-			}
-
-			Var maximum = var("maximum", dom(freqs));
-			Var minimum = var("minimum", dom(freqs));
-			Var distdelta = var("distdelta", dom(range(m + 1)));//Possible to reduce size by creating a list with the dist between all elements of freqs
-
-			equal(maximum, max(vars(allocated_r, allocated_e)));
-			equal(minimum, min(vars(allocated_r, allocated_e)));
-			equal(distdelta, dist(maximum, minimum));
-			minimize(distdelta);
-		}
 
 	}
 

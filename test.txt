@@ -1,0 +1,20 @@
+<instance  format="XCSP3"   type="WCSP">
+<variables >
+<var id="x"> 0..3  </var >
+<var id="y"> 0..3  </var >
+</variables >
+<constraints ub="5">
+<extension  type="soft" defaultCost="0">
+<list > x  </list >
+<tuples cost="1"> 1 3  </tuples >
+</extension >
+<extension  type="soft" defaultCost="0">
+<list > y  </list >
+<tuples cost="1"> 1 2  </tuples >
+</extension >
+<extension  type="soft" defaultCost="0">
+<list > x y </list >
+<tuples cost="5">(0,0)(0,1)(1,0)(1,1)(1,2)(2,1)(2,2)(2,3)(3,2)(3,3)</tuples >
+</extension >
+</constraints >
+</instance >
